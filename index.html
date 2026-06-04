@@ -131,8 +131,9 @@ body{
 }
 .toc a .num{
   font-weight:600; color:var(--blue); font-variant-numeric:tabular-nums;
-  min-width:1.4em;
+  min-width:1.4em; text-align:center; flex:none; margin-right:5px;
 }
+.toc a .num + span{ flex:1; min-width:0; }
 .toc a:hover{background:var(--blue-pale); color:var(--ink);}
 .toc a.active{
   background:#fff; color:var(--blue-deep); font-weight:500;
@@ -556,7 +557,7 @@ ol li strong:first-child{color:var(--blue-deep);}
 /* tarjetas de bloque en la portada */
 .block-cards{ display:grid; gap:20px; padding-bottom:90px; }
 .block-card{
-  display:block; text-decoration:none; color:inherit;
+  display:block; text-decoration:none; color:inherit; cursor:pointer;
   background:var(--surface); border:1px solid var(--line);
   border-radius:18px; overflow:hidden; box-shadow:var(--shadow);
   transition:transform .18s ease, box-shadow .18s ease, border-color .18s;
@@ -726,11 +727,11 @@ ol li strong:first-child{color:var(--blue-deep);}
       </div>
 
       <div class="block-cards">
-        <a class="block-card" href="bloque-a.html"><div class="bc-head"><span class="bc-badge">A</span><div class="bc-titles"><div class="bc-range">Pilares 1 – 3</div><h2>Cimientos hermenéuticos</h2></div></div><div class="bc-sub">Cómo se lee el libro: las reglas del juego antes de cualquier profecía.</div><ul class="bc-pillars"><li><a href="bloque-a.html#p1"><span class="pn">1</span><span class="pt">Reglas de interpretación en orden fijo</span><span class="tag propio mini">Propio</span></a></li><li><a href="bloque-a.html#p2"><span class="pn">2</span><span class="pt">Apocalipsis escrito por escenas</span><span class="tag propio mini">Propio</span></a></li><li><a href="bloque-a.html#p3"><span class="pn">3</span><span class="pt">El reloj profético sincronizado con Israel</span><span class="tag hibrido mini">Clásico con desarrollo propio</span></a></li></ul></a>
-        <a class="block-card" href="bloque-b.html"><div class="bc-head"><span class="bc-badge">B</span><div class="bc-titles"><div class="bc-range">Pilares 4 – 6</div><h2>El esqueleto temporal (Daniel)</h2></div></div><div class="bc-sub">Cuánto dura la era, quién la protagoniza y por qué cierra con siete años.</div><ul class="bc-pillars"><li><a href="bloque-b.html#p4"><span class="pn">4</span><span class="pt">Las 70 semanas de Daniel 9</span><span class="tag clasico mini">Clásico</span></a></li><li><a href="bloque-b.html#p5"><span class="pn">5</span><span class="pt">Cuatro reinos que culminan en el Anticristo</span><span class="tag hibrido mini">Clásico con desarrollo propio</span></a></li><li><a href="bloque-b.html#p6"><span class="pn">6</span><span class="pt">La Tribulación como maldiciones del Pacto Mosaico</span><span class="tag propio mini">Propio</span></a></li></ul></a>
-        <a class="block-card" href="bloque-c.html"><div class="bc-head"><span class="bc-badge">C</span><div class="bc-titles"><div class="bc-range">Pilares 7 – 10</div><h2>El pilar pretribulacional</h2></div></div><div class="bc-sub">El corazón del sistema: por qué la Iglesia sale antes de los siete años.</div><ul class="bc-pillars"><li><a href="bloque-c.html#p7"><span class="pn">7</span><span class="pt">Rapto vs. Segunda Venida</span><span class="tag clasico mini">Clásico</span></a></li><li><a href="bloque-c.html#p8"><span class="pn">8</span><span class="pt">Apocalipsis 4 como evidencia del Rapto</span><span class="tag hibrido mini">Clásico con desarrollo propio</span></a></li><li><a href="bloque-c.html#p9"><span class="pn">9</span><span class="pt">La boda judía como plantilla</span><span class="tag propio mini">Propio</span></a></li><li><a href="bloque-c.html#p10"><span class="pn">10</span><span class="pt">“Lo que detiene” = el Espíritu en la Iglesia</span><span class="tag clasico mini">Clásico</span></a></li></ul></a>
-        <a class="block-card" href="bloque-d.html"><div class="bc-head"><span class="bc-badge">D</span><div class="bc-titles"><div class="bc-range">Pilares 11 – 17</div><h2>Mecánica de los 7 años</h2></div></div><div class="bc-sub">El motor de la semana 70, paso a paso, girando en torno a mid-trib.</div><ul class="bc-pillars"><li><a href="bloque-d.html#p11"><span class="pn">11</span><span class="pt">El Tercer Templo y el pacto con el Anticristo</span><span class="tag clasico mini">Clásico</span></a></li><li><a href="bloque-d.html#p12"><span class="pn">12</span><span class="pt">Los Dos Testigos como chivos expiatorios</span><span class="tag hibrido mini">Clásico con desarrollo propio</span></a></li><li><a href="bloque-d.html#p13"><span class="pn">13</span><span class="pt">Los cinco grupos y la marca</span><span class="tag hibrido mini">Clásico con desarrollo propio</span></a></li><li><a href="bloque-d.html#p14"><span class="pn">14</span><span class="pt">Mid-trib como punto-bisagra</span><span class="tag propio mini">Propio</span></a></li><li><a href="bloque-d.html#p15"><span class="pn">15</span><span class="pt">Babilonia como contraparte de Jerusalén</span><span class="tag propio mini">Propio</span></a></li><li><a href="bloque-d.html#p16"><span class="pn">16</span><span class="pt">Armagedón como campaña de 5 etapas</span><span class="tag propio mini">Propio</span></a></li><li><a href="bloque-d.html#p17"><span class="pn">17</span><span class="pt">La confesión nacional de Israel</span><span class="tag hibrido mini">Clásico con desarrollo propio</span></a></li></ul></a>
-        <a class="block-card" href="bloque-e.html"><div class="bc-head"><span class="bc-badge">E</span><div class="bc-titles"><div class="bc-range">Pilares 18 – 22</div><h2>Lo que viene después</h2></div></div><div class="bc-sub">Del intervalo de 75 días al estado eterno: el cierre del sistema.</div><ul class="bc-pillars"><li><a href="bloque-e.html#p18"><span class="pn">18</span><span class="pt">El intervalo de 75 días</span><span class="tag propio mini">Propio</span></a></li><li><a href="bloque-e.html#p19"><span class="pn">19</span><span class="pt">El Reino Milenial y las dos naturalezas</span><span class="tag hibrido mini">Clásico con desarrollo propio</span></a></li><li><a href="bloque-e.html#p20"><span class="pn">20</span><span class="pt">Templo y sacrificios en el Milenio</span><span class="tag propio mini">Propio</span></a></li><li><a href="bloque-e.html#p21"><span class="pn">21</span><span class="pt">Gog y Magog después del Milenio</span><span class="tag hibrido mini">Clásico con desarrollo propio</span></a></li><li><a href="bloque-e.html#p22"><span class="pn">22</span><span class="pt">Gran Trono Blanco y Nuevo Cielo/Tierra</span><span class="tag clasico mini">Clásico</span></a></li></ul></a>
+        <div class="block-card" data-href="bloque-a.html"><div class="bc-head"><span class="bc-badge">A</span><div class="bc-titles"><div class="bc-range">Pilares 1 – 3</div><h2>Cimientos hermenéuticos</h2></div></div><div class="bc-sub">Cómo se lee el libro: las reglas del juego antes de cualquier profecía.</div><ul class="bc-pillars"><li><a href="bloque-a.html#p1"><span class="pn">1</span><span class="pt">Reglas de interpretación en orden fijo</span><span class="tag propio mini">Propio</span></a></li><li><a href="bloque-a.html#p2"><span class="pn">2</span><span class="pt">Apocalipsis escrito por escenas</span><span class="tag propio mini">Propio</span></a></li><li><a href="bloque-a.html#p3"><span class="pn">3</span><span class="pt">El reloj profético sincronizado con Israel</span><span class="tag hibrido mini">Clásico con desarrollo propio</span></a></li></ul></div>
+        <div class="block-card" data-href="bloque-b.html"><div class="bc-head"><span class="bc-badge">B</span><div class="bc-titles"><div class="bc-range">Pilares 4 – 6</div><h2>El esqueleto temporal (Daniel)</h2></div></div><div class="bc-sub">Cuánto dura la era, quién la protagoniza y por qué cierra con siete años.</div><ul class="bc-pillars"><li><a href="bloque-b.html#p4"><span class="pn">4</span><span class="pt">Las 70 semanas de Daniel 9</span><span class="tag clasico mini">Clásico</span></a></li><li><a href="bloque-b.html#p5"><span class="pn">5</span><span class="pt">Cuatro reinos que culminan en el Anticristo</span><span class="tag hibrido mini">Clásico con desarrollo propio</span></a></li><li><a href="bloque-b.html#p6"><span class="pn">6</span><span class="pt">La Tribulación como maldiciones del Pacto Mosaico</span><span class="tag propio mini">Propio</span></a></li></ul></div>
+        <div class="block-card" data-href="bloque-c.html"><div class="bc-head"><span class="bc-badge">C</span><div class="bc-titles"><div class="bc-range">Pilares 7 – 10</div><h2>El pilar pretribulacional</h2></div></div><div class="bc-sub">El corazón del sistema: por qué la Iglesia sale antes de los siete años.</div><ul class="bc-pillars"><li><a href="bloque-c.html#p7"><span class="pn">7</span><span class="pt">Rapto vs. Segunda Venida</span><span class="tag clasico mini">Clásico</span></a></li><li><a href="bloque-c.html#p8"><span class="pn">8</span><span class="pt">Apocalipsis 4 como evidencia del Rapto</span><span class="tag hibrido mini">Clásico con desarrollo propio</span></a></li><li><a href="bloque-c.html#p9"><span class="pn">9</span><span class="pt">La boda judía como plantilla</span><span class="tag propio mini">Propio</span></a></li><li><a href="bloque-c.html#p10"><span class="pn">10</span><span class="pt">“Lo que detiene” = el Espíritu en la Iglesia</span><span class="tag clasico mini">Clásico</span></a></li></ul></div>
+        <div class="block-card" data-href="bloque-d.html"><div class="bc-head"><span class="bc-badge">D</span><div class="bc-titles"><div class="bc-range">Pilares 11 – 17</div><h2>Mecánica de los 7 años</h2></div></div><div class="bc-sub">El motor de la semana 70, paso a paso, girando en torno a mid-trib.</div><ul class="bc-pillars"><li><a href="bloque-d.html#p11"><span class="pn">11</span><span class="pt">El Tercer Templo y el pacto con el Anticristo</span><span class="tag clasico mini">Clásico</span></a></li><li><a href="bloque-d.html#p12"><span class="pn">12</span><span class="pt">Los Dos Testigos como chivos expiatorios</span><span class="tag hibrido mini">Clásico con desarrollo propio</span></a></li><li><a href="bloque-d.html#p13"><span class="pn">13</span><span class="pt">Los cinco grupos y la marca</span><span class="tag hibrido mini">Clásico con desarrollo propio</span></a></li><li><a href="bloque-d.html#p14"><span class="pn">14</span><span class="pt">Mid-trib como punto-bisagra</span><span class="tag propio mini">Propio</span></a></li><li><a href="bloque-d.html#p15"><span class="pn">15</span><span class="pt">Babilonia como contraparte de Jerusalén</span><span class="tag propio mini">Propio</span></a></li><li><a href="bloque-d.html#p16"><span class="pn">16</span><span class="pt">Armagedón como campaña de 5 etapas</span><span class="tag propio mini">Propio</span></a></li><li><a href="bloque-d.html#p17"><span class="pn">17</span><span class="pt">La confesión nacional de Israel</span><span class="tag hibrido mini">Clásico con desarrollo propio</span></a></li></ul></div>
+        <div class="block-card" data-href="bloque-e.html"><div class="bc-head"><span class="bc-badge">E</span><div class="bc-titles"><div class="bc-range">Pilares 18 – 22</div><h2>Lo que viene después</h2></div></div><div class="bc-sub">Del intervalo de 75 días al estado eterno: el cierre del sistema.</div><ul class="bc-pillars"><li><a href="bloque-e.html#p18"><span class="pn">18</span><span class="pt">El intervalo de 75 días</span><span class="tag propio mini">Propio</span></a></li><li><a href="bloque-e.html#p19"><span class="pn">19</span><span class="pt">El Reino Milenial y las dos naturalezas</span><span class="tag hibrido mini">Clásico con desarrollo propio</span></a></li><li><a href="bloque-e.html#p20"><span class="pn">20</span><span class="pt">Templo y sacrificios en el Milenio</span><span class="tag propio mini">Propio</span></a></li><li><a href="bloque-e.html#p21"><span class="pn">21</span><span class="pt">Gog y Magog después del Milenio</span><span class="tag hibrido mini">Clásico con desarrollo propio</span></a></li><li><a href="bloque-e.html#p22"><span class="pn">22</span><span class="pt">Gran Trono Blanco y Nuevo Cielo/Tierra</span><span class="tag clasico mini">Clásico</span></a></li></ul></div>
       </div>
     </div>
   </main>
@@ -751,8 +752,8 @@ ol li strong:first-child{color:var(--blue-deep);}
   function onScroll(){
     var st = window.scrollY || document.documentElement.scrollTop;
     var h  = document.documentElement.scrollHeight - window.innerHeight;
-    bar.style.width = (h > 0 ? (st / h) * 100 : 0) + '%';
-    toTop.classList.toggle('show', st > 500);
+    if(bar) bar.style.width = (h > 0 ? (st / h) * 100 : 0) + '%';
+    if(toTop) toTop.classList.toggle('show', st > 500);
   }
 
   /* ---- scroll-spy: qué pilar estoy leyendo ---- */
@@ -767,7 +768,7 @@ ol li strong:first-child{color:var(--blue-deep);}
         });
         var t = e.target.getAttribute('data-title') || '';
         // mostrar solo "Pilar N · ..." abreviado en el indicador
-        nrPillar.textContent = t.replace(/^Pilar /,'Pilar ');
+        if(nrPillar) nrPillar.textContent = t.replace(/^Pilar /,'Pilar ');
       }
     });
   }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
@@ -777,7 +778,7 @@ ol li strong:first-child{color:var(--blue-deep);}
   var introSpy = new IntersectionObserver(function(entries){
     entries.forEach(function(e){
       if(e.isIntersecting && (window.scrollY||0) < 200){
-        nrPillar.textContent = 'Introducción';
+        if(nrPillar) nrPillar.textContent = 'Introducción';
         tocLinks.forEach(function(a){a.classList.remove('active');});
       }
     });
@@ -789,8 +790,19 @@ ol li strong:first-child{color:var(--blue-deep);}
   onScroll();
 
   /* ---- volver arriba ---- */
-  toTop.addEventListener('click', function(){
-    window.scrollTo({top:0, behavior:'smooth'});
+  if(toTop){
+    toTop.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+
+  /* ---- tarjetas de bloque clicables (portada) ---- */
+  document.querySelectorAll('.block-card[data-href]').forEach(function(card){
+    card.addEventListener('click', function(ev){
+      /* si el clic fue sobre un enlace interno (pilar), respetar ese enlace */
+      if(ev.target.closest('a')) return;
+      window.location.href = card.getAttribute('data-href');
+    });
   });
 
   /* ---- menú móvil ---- */
